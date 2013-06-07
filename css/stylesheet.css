@@ -1,0 +1,804 @@
+/* ####################### BASICS ####################### */
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/background.jpg) repeat-y #E450C2;
+}
+
+#container
+{
+	position:relative;
+	margin: 0 0 0 -490px;
+	padding: 0;
+	left: 50%;
+	width: 980px;
+	height: 100%;
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+
+.borderline
+{
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	height: 160px;
+}
+
+.clear
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+}
+/* ####################### Search Box ###################*/
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+} 
+/* Form wrapper styling */
+.form-wrapper {
+    width: 450px;
+    padding: 15px;
+    margin: 50px auto auto 85px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+ .form-wrapper2 {
+    width: 450px;
+    padding: 15px;
+    margin: 50px auto auto 260px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+ 
+/* Form text input */
+ 
+.form-wrapper input {
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;      
+}
+
+.form-wrapper2 input {
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;      
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper2 input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+.form-wrapper2 input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.form-wrapper2 input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+.form-wrapper2 input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+} 
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+.form-wrapper2 button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+} 
+   
+.form-wrapper button:hover{     
+    background: #e54040;
+}   
+.form-wrapper2 button:hover{     
+    background: #e54040;
+}  
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+.form-wrapper2 button:active,
+.form-wrapper2 button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+.form-wrapper2 button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+.form-wrapper2 button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+.form-wrapper2 button:focus:before,
+.form-wrapper2 button:active:before{
+        border-right-color: #c42f2f;
+}  
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}  
+.form-wrapper2 button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+/* ####################### HEADER ####################### */
+
+#sbox
+{
+	height:80px;
+	float:left
+	margin: 0 0 30px 10px;
+	padding: 10px 0 0 0;
+	width:570px;
+}
+#header
+{
+	margin: 0 0 0 30px;
+	padding: 0;
+	width: 910px;
+	height: 130px;
+}
+
+#header #header_l
+{
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 70px 0 0 0;
+	width: 570px;
+	height: 100px;
+}
+
+#header #header_l h2
+
+{
+	height: 35px;
+	font: 25px Arial, Helvetica, sans-serif;
+}
+
+#header #header_l h2 a
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header #header_l h2 a:hover, #header #header_l h2 a#current
+{
+	color: #6E2F4E;
+}
+
+#header #header_r
+{
+	float: right;
+	margin: 0 10px 0 0;
+	padding: 0;
+	width: 320px;
+	height: 130px;
+}
+
+#header #header_r img
+{
+	border: 0;
+}
+
+
+/* ####################### SUBHEADER ####################### */
+
+#sub_header
+{
+	margin: 0 0 0 30px;
+	padding: 0;
+	width: 910px;
+	height: auto;
+}
+
+/* ####################### SUBHEADER [NAVIGATION] ####################### */
+
+#sub_header #navigation
+{
+	float: left;
+	margin: 10px 0 0 10px;
+	padding: 0;
+	width: 320px;
+	height: auto;
+	background: none;
+}
+
+#sub_header #navigation a
+{
+	/*font: 51px/60px Arial, Helvetica, sans-serif;*/
+	/*font: 58px/67px Georgia, Times New Roman, Times, serif;*/
+	/*font: 51px/60px fonts/SegoeWP-Light, fonts/SegoeWP, fonts/SegoeWP-Semibold;*/
+	font: 40px/49px SegoeWP;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#sub_header #navigation a:hover
+{
+
+	color: #6E2F4E;
+}
+
+/* ####################### SUBHEADER [BUBBLE] ####################### */
+
+#sub_header #block
+{
+	float: right;
+	margin: 50px 10px 0 0;
+	padding: 40px 40px 30px 40px;
+	width: 490px;
+	height: auto;
+	background: url(../img/color-black-10-percent-trans.png) transparent;
+}
+
+#sub_header #triangle
+{
+	float: right;
+	margin: 0 10px 15px 0;
+	padding: 0;
+	width: 570px;
+	height: 10px;
+	background: url(../img/color-black-10-percent-triangle-trans.png) no-repeat transparent 500px top;
+}
+
+/* ####################### HORIZONTAL LINE ####################### */
+
+.hr
+{
+	margin: 0 0 0 40px;
+	padding: 0;
+	width: 890px;
+	height: 50px;
+}
+
+.hr .line
+{
+	position: absolute;
+	display: inline;
+	float: right;
+	margin: 2px 0 0 10px;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #6E2F4E;
+	font-size: 12px;
+	text-align: right;
+	color: #6E2F4E;
+	height: 27px;
+}
+
+.hr .line a
+{
+	font-size: 12px;
+	color: #6E2F4E;
+	text-decoration: none;
+}
+
+.hr .line a:hover
+{
+	color: #FFF;
+}
+
+.hr #line_work
+{
+	width: 748px;
+}
+
+.hr #line_about
+{
+	width: 729px;
+}
+
+.hr #line_contact
+{
+	width: 693px;
+}
+
+/* ####################### HEADLINES & PARAGRAPHS ####################### */
+
+h1
+{
+	margin: -10px 0 0 0;
+	padding: 0;
+	font: 27px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+h2
+{
+	margin: 5px 0 0 0;
+	padding: 0;
+	font: 58px Georgia, Times New Roman, Times, serif;
+	color: #FFF;
+}
+
+h3
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font: 20px/20px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+h4
+{
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: auto;
+	font: italic 27px/20px Georgia, Times New Roman, Times, serif;
+	color: #FFF;
+}
+
+h3 .top
+{
+	margin: 0 0 0 10px;
+	vertical-align: top;
+	font-style: italic;
+}
+
+h3 .bold
+{
+	margin: 0;
+	padding: 0;
+	font: bold italic 30px Georgia, Times New Roman, Times, serif;
+}
+
+p
+{
+	font: 14px/24px Georgia, Times New Roman, Times, serif;
+	color: #FFF;
+}
+
+p a.link
+{
+	margin: 0;
+	padding: 0 3px 0 3px;
+	font: bold italic 12px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+p a.link:hover
+{
+	color: #6E2F4E;
+}
+
+p.meta
+{
+	font-size: 12px;
+	font-style: italic;
+	color: #6E2F4E;
+}
+
+/* ####################### PARAGRAPH CONTACT ####################### */
+
+p .position
+{
+	float: right;
+	margin: -25px 0 0 0;
+	padding-right: 50px;
+}
+
+p a.mail
+{
+	margin: 0;
+	padding: 0 0 0 30px;
+	font: 14px/24px Georgia, Times New Roman, Times, serif;
+	color: #FFF;
+	background: url(../img/mail.gif) no-repeat left bottom;
+}
+
+p a:hover.mail
+{
+	color: #6E2F4E;
+	background: url(../img/mail_hover.gif) no-repeat left bottom;
+}
+
+/* ####################### COLUMNS ####################### */
+
+.columns
+{
+	margin: 70px 0 0 11px;
+	padding: 0;
+	width: 960px;
+	height: auto;
+}
+
+.columns .unit
+{
+	float: left;
+	margin: 0 30px 50px 30px;
+	padding: 0;
+	width: 260px;
+	height: auto;
+}
+
+.columns .unit_20
+{
+	float: left;
+	margin: -15px 30px 50px 30px;
+	padding: 0;
+	width: 260px;
+	height: auto;
+}
+
+.columns .thumb
+{
+	margin: 0;
+	padding: 5px;
+	width: 250px;
+	height: auto;
+	background: url(../img/thumb_background.gif) no-repeat transparent;
+}
+
+.columns .thumb .new
+{
+	position: absolute; 
+	margin: 10px 0 0 -15px;
+	width: 48px;
+	height: 39px;
+	background: url(../img/thumb_new.gif) no-repeat transparent;
+}
+
+.columns .unit .image_container
+{
+	margin: -20px 0 100px 0;
+	padding: 5px;
+	width: 570px; 
+	height: 420px; 
+	background: url(../img/image_background.jpg) no-repeat transparent;
+}
+
+.columns p
+{
+	margin: 10px 0 30px 0;
+	padding: 0;
+	width: 250px;
+}
+
+.columns a
+{
+	margin: 0 0 0 5px;
+	font: italic 11px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #6E2F4E;
+}
+
+.columns a:hover
+{
+	color: #FFF;
+}
+
+.columns .thumb img
+{
+	margin: 0 0 0 -5px;
+	padding: 0;
+	border: 0;
+}
+
+/* ####################### FORM ####################### */
+
+label
+{
+	display: block;
+	margin: 0;
+	padding: 0 0 15px 10px;
+	font: bold italic 12px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+label input
+{
+	margin: 15px 0 10px -10px;
+	padding: 0 10px 10px 10px;
+	width: 230px;
+	border: 0;
+	background: url(../img/input.gif) no-repeat transparent left 15px;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+input.submit
+{
+	margin: -2px 10px 0 0;
+	padding: 2px 10px 15px 12px;
+	width: 250px;
+	height: 50px;
+	border: 0;
+	text-align: left;
+	font: bold italic 12px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+	background: url(../img/send.png) no-repeat transparent;
+}
+
+input.submit:hover
+{
+	background: url(../img/send_hover.png) no-repeat transparent;
+}
+
+label textarea.expanding
+{
+	margin: 15px 0 0 -10px;
+	padding: 0 10px 18px 10px;
+	width: 230px;
+	height: 100px; 
+	min-height: 100px;
+	border: 0;
+	background: url(../img/input.gif) no-repeat transparent left 18px;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+/* ####################### FOOTER ####################### */
+
+#footer
+{
+	margin: 100px 10px 0 40px;
+	padding: 0 0 100px 0;
+	width: 890px;
+	height: 15px;
+	font: 10px Georgia, Times New Roman, Times, serif;
+	color: #6E2F4E;
+}
+
+#footer #footer_l
+{
+	float: left;
+	margin: 3px 0;
+}
+
+#footer #footer_r
+{
+	float: right;
+	vertical-align: top;
+}
+
+#footer #footer_r img
+{
+	border: 0;
+	margin-left: 5px;
+	vertical-align: text-bottom;
+}
+
+/* ####################### EASY SLIDER ####################### */
+#slider
+{
+	
+}
+
+#slider ul, #slider li
+{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#slider li
+{
+	overflow: hidden; 
+	width: 560px;
+	height: 410px;
+}	
+
+.graphic, #prevBtn, #nextBtn
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -8000px;
+	border: 0;
+}
+
+#prevBtn, #nextBtn
+{
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 38px;
+}
+
+#prevBtn
+{
+	margin: -40px 0 0 -20px;
+}
+
+#nextBtn
+{
+	margin: -40px 0 0 522px;
+}
+
+#prevBtn a, #nextBtn a
+{  
+	display: block;
+	width: 48px;
+	height: 39px;
+	background:url(../img/b_prev.gif) no-repeat;	
+}
+
+#nextBtn a
+{ 
+	background:url(../img/b_next.gif) no-repeat;	
+}
+
+#appDiv3
+{
+    margin: 0 0 0 100px;
+}
+.dyndiv 
+{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 135px;
+	width: 100%;
+	top: 5px;
+	bottom: 5px;
+/*	border:solid thin #CCC; */
+}
+.divein
+ {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 3px;
+	height: 135px;
+	position:relative;
+	width: 18%;
+/*	border: thin groove #FFF; */
+	float:right;
+}
+.divein2
+ {
+	padding: 2px;
+	height: 135px;
+	width: 69%;
+	color:#FFFFFF;
+	position: relative;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	float:right;
+}
+.diveinn
+ {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	height: 135px;
+	position:relative;
+	width: 240px;
+/*	border: thin groove #FFF; */
+	float:right;
+}
+.diveina
+ {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 3px;
+	height: 135px;
+	position:relative;
+	width: 18%;
+/*	border: thin groove #FFF; */
+	float:left;
+}
+.divein2a
+ {
+	padding: 2px;
+	height: 135px;
+	width: 59%;
+	color:#FFFFFF;
+	position: relative;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	float:right;
+}
